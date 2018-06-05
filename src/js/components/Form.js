@@ -43,7 +43,7 @@ render() {
     <form onSubmit={this.handleSubmitForm}>
       <div className="form-group">
 
-      <label htmlFor="title">Title</label>
+      <label htmlFor="title"> Title </label>
       <input
         type="text"
         id="title"
