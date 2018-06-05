@@ -1,5 +1,6 @@
 import React from 'react';
 import List from './List';
+import Form from './Form';
 //we want list to get a list of Articles
 //so we need to connect state.articles with component
 //we use mapStateToProps
@@ -10,7 +11,10 @@ const App = () => (
       <List />
       {/* will interact with the Redux store */}
       {/* we need to 'connect' List to store with mapStateToProps */}
-    </div>
+
+    <h2>add new article here:</h2>
+    <Form />
+  </div>
   </div>
 );
 
