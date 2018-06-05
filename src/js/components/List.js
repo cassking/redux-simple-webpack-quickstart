@@ -16,7 +16,7 @@ const  mapStateToProps = function mapStateToProps(state){
 const ConnectedList = ( {articles} )=> (
   <ul className="list-group list-group-flush">
     {articles.map (article => (
-      <li key={article.id}>
+      <li className="list-group-item" key={article.id}>
         {article.title}
       </li>
     ))}
