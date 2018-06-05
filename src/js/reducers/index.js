@@ -1,12 +1,14 @@
+
+
 //src/js/reducers/index.js
 // simple reducer taking the initial
 // state as the first parameter.
 //As a second parameter --> action.
 import { ADD_ARTICLE }   from '../constants/action-types'
 
-const initialState = (
+const initialState = {
   articles: []
-)
+}
 
 const rootReducer = (state = initialState,action) => {
 switch (action.type){

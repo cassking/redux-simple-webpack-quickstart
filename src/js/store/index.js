@@ -1,4 +1,3 @@
-//src/js/store/index.js
 //createStore is the function for creating the Redux store.
 
 

@@ -64,5 +64,26 @@ tip: you can combine reducers with redux function:
 `combineReducers`
 
 
-you can learn the basics of redux here like i did:
+The most important methods for managing state are:
+
+`getState` - access current state of the application
+`dispatch`  - dispatching an action
+`subscribe` - listening on state changes
+
+Redux and React: most important method is `connect`: connects a React component with the Redux store.
+
+two common functions:
+1. the `mapStateToProps` function: connects a part of the redux state to the props of a react component
+2. the `mapDispatchToProps` function: similar, connects redux actions to react props
+
+`PROVIDER` - to connect redux to react, wraps application and makes it aware of entire redux store
+
+`connect` `<List />` componetn to state with `mapStateToProps`
+
+with connect all data
+
+
+
+
+you can learn the  basics of redux here:
 https://www.codementor.io/valentino/react-redux-tutorial-for-beginners-learning-redux-in-2018-fek71ojgh
