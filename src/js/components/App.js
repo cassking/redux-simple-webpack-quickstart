@@ -11,6 +11,8 @@ const App = () => (
       <List />
       {/* will interact with the Redux store */}
       {/* we need to 'connect' List to store with mapStateToProps */}
+</div>
+<div className="col-md-4 offset-md-1">
 
     <h2>add new article here:</h2>
     <Form />

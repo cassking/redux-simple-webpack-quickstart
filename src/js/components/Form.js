@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import uuidvl from 'uuid';
+import uuidv1 from 'uuid';
 import { addArticle } from '../actions/index';
 
 
@@ -24,7 +24,7 @@ class ConnectedForm extends Component {
   }
 
 
-handleChange(event){
+handleChange(event){console.log(event.target.value)
   this.setState({ [event.target.id]: event.target.value })
 
 }
@@ -41,7 +41,8 @@ render() {
 
   return(
     <form onSubmit={this.handleSubmitForm}>
-    <div>
+      <div className="form-group">
+
       <label htmlFor="title">Title</label>
       <input
         type="text"
@@ -50,7 +51,7 @@ render() {
         onChange={this.handleChange}
       />
     </div>
-    <button type="submit">
+    <button type="submit" className="btn btn-success btn-lg">
       SAVE
     </button>
 
