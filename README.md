@@ -80,10 +80,7 @@ two common functions:
 
 `connect` `<List />` componetn to state with `mapStateToProps`
 
-with connect all data
 
-
-
-
-you can learn the  basics of redux here:
-https://www.codementor.io/valentino/react-redux-tutorial-for-beginners-learning-redux-in-2018-fek71ojgh
+`<Form />` is stateful with own local state ( not every piece of state needs to be in redux)
+1. Form will update local state after form submitted
+2. receives a Redux action as prop -> so that i can update the global state by dispatching the addArticle Action

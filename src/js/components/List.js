@@ -1,9 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const mapStateToProps = state() =>{
+const  mapStateToProps = function mapStateToProps(state){
   return { articles: state.articles }
 }
+
+//same as
+// function mapStateToProps(state) {
+//  return { articles: state.articles };
+//};
 
 //the component gets the prop articles  which
 //is a copy of the articles array. the array lives in
