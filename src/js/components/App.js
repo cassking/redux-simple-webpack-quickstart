@@ -13,7 +13,6 @@ const App = () => (
       {/* we need to 'connect' List to store with mapStateToProps */}
 </div>
 <div className="col-md-4 offset-md-1">
-
     <h2>Add a New Phrase here: </h2>
     <Form />
   </div>

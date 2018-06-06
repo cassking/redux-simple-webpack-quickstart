@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import uuidv1 from 'uuid';
 import { addArticle } from '../actions/index';
 
-
 const mapDispatchToProps = dispatch => {
   return {
     addArticle: article => dispatch(addArticle(article))
@@ -26,7 +25,6 @@ class ConnectedForm extends Component {
 
 handleChange(event){console.log(event.target.value)
   this.setState({ [event.target.id]: event.target.value })
-
 }
 handleSubmitForm(event){
   event.preventDefault()
@@ -37,6 +35,8 @@ handleSubmitForm(event){
 }
 
 render() {
+  {console.log(this.props)}
+
   const { title } = this.state;
 
   return(
